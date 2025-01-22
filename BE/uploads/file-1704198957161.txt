@@ -1,0 +1,21 @@
+PAGINI
+-------
+- login => pagina comuna
+1. PENTRU STUDENTI
+2. PENTRU PROFESORI
+
+
+
+TABELE
+-------
+
+- users (id, email, password, account_type, student_number)
+- dissertation_requests (id, student_id, teacher_id, status, title)
+
+
+
+RUTE
+-------
+- /login => primeste email si password, returneaza user
+- /send-dissertation-request => primeste student_id, teacher_id, title, creeaza obiect, returneaza obiectul
+- /accept-dissertation-request => primeste id, seteaza status pe accepted / declined, returneaza obiect
